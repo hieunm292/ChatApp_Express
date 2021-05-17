@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hieu's Chat-App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="logo">
+                <i class="fas fa-sms" style="font-size:36px;"></i>
+                <h3>Chat App</h3>
+
+            </div>
+            <p id="your-name">Your Name</p>
+        </div>
+
+<!-- ------------------------- -->
+
+        <div class="chat-section">
+            <div class="main-wrapper">
+                <div class="chat-content">
+                    <div class="message">
+                        <div class="message-row other-message">
+                            <!-- <div class="message-title">
+                                😈<span>HieuJS</span>
+                            </div>
+                            <div class="message-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem eget justo sagittis tempus. Phasellus scelerisque neque vel tellus fringilla, eget rutrum lacus condimentum. Aliquam quis malesuada dolor, a facilisis sapien. Nullam vehicula mauris posuere leo porttitor, vel tristique velit tristique. Sed mauris nunc, 
+                            </div>
+                            <div class="message-time">
+                                Feb 29
+                            </div> -->
+                        </div>
+
+                        <div class="message-row you-message">
+                            <!-- <div class="message-title">
+                                😈<span>User01</span>
+                            </div>
+                            <div class="message-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem eget justo sagittis tempus. Phasellus scelerisque neque vel tellus fringilla, eget rutrum lacus condimentum. Aliquam quis malesuada dolor, a facilisis sapien. Nullam vehicula mauris posuere leo porttitor, vel tristique velit tristique. Sed mauris nunc, commodo nec vestibulum vel, fringilla sed felis. Fusce sit amet quam a neque porta semper. Maecenas ut maximus nibh, nec tincidunt erat. Morbi pellentesque finibus sodales. Curabitur et tellus eu quam feugiat laoreet. Sed ornare enim eget dapibus cursus. Cras hendrerit aliquam odio, eu gravida est luctus ac. Sed feugiat, nisi at viverra gravida, metus velit scelerisque urna, viverra condimentum dolor arcu nec sem. Suspendisse potenti.
+                            </div>
+                            <div class="message-time">
+                                Feb 29
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+<!-- ------------------------- -->
+                <form class="msg-text">
+                    <input type="text" name="msg" id="msg" 
+                    placeholder="Type message here..." autocomplete="off">
+                    <button id="btn-send">
+                        <i class="fas fa-paper-plane" style="font-size:18px;" > Send</i>
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+  
+    <script src="socket.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
